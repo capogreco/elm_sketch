@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <main></main>
+    <script src="https://unpkg.com/elm-canvas@2.2/elm-canvas.js"></script>
+    <script src="./elm.js"></script>
+    <script>
+
+        document.body.style.margin   = 0
+        document.body.style.overflow = `hidden`
+
+        const app = Elm.Main.init({
+            node: document.querySelector("main"),
+            flags: {
+                innerWidth  : window.innerWidth,
+                innerHeight : window.innerHeight
+            },
+        });
+
+    </script>
+  </body>
+</html>
